@@ -1,0 +1,28 @@
+version: '3'
+services:
+
+  stop_bang_main:
+    image: stop_bang_main
+    build:
+      context: ./stop_bang_main
+      dockerfile: Dockerfile
+    container_name: stop_bang_main
+    ports:
+      - '3000:3000'
+    env_file: .env
+    environment:
+      - PORT=3000
+    restart: 'no'
+  
+  stop_bang_login_logout:
+    image: stop_bang_login_logout
+    build:
+      context: ./stop_bang_login_logout
+      dockerfile: Dockerfile
+    container_name: stop_bang_login_logout
+    ports:
+      - '3001:3000'
+    env_file: .env
+    environment:
+      - PORT=3000
+    restart: 'no'
