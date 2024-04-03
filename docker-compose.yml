@@ -20,3 +20,12 @@ services:
     container_name: stop_bang_login_logout
     env_file: ./stop_bang_login_logout/.env
     restart: 'no'
+  
+  stop_bang_resident_mypage:
+    image: stop_bang_resident_mypage
+    build:
+      context: ./stop_bang_resident_mypage
+      dockerfile: Dockerfile
+    container_name: stop_bang_resident_mypage
+    env_file: ./stop_bang_resident_mypage/.env
+    restart: 'no'
