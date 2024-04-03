@@ -1,4 +1,4 @@
-## Meta Repo
+ㅁ## Meta Repo
 
 이 레포지토리를 clone 하여 여러 레포지토리를 관리할 수 있습니다
 
@@ -62,3 +62,7 @@ stop_bang_login_logout:
 Everything up-to-date
 stop_bang_login_logout ✓
 ```
+
+### 📚 참고
+
+https://github.com/mateodelnorte/meta
