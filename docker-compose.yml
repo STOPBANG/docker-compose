@@ -30,6 +30,15 @@ services:
     env_file: ./stop_bang_resident_mypage/.env
     restart: 'no'
 
+  stop_bang_realtor_page:
+    image: stop_bang_realtor_page
+    build:
+      context: ./stop_bang_realtor_page
+      dockerfile: Dockerfile
+    container_name: stop_bang_realtor_page
+    env_file: ./stop_bang_realtor_page/.env
+    restart: 'no'
+
   stop_bang_sub_feature_DB:
     image: stop_bang_sub_feature_db
     build:
