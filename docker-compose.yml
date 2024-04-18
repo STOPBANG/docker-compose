@@ -48,6 +48,15 @@ services:
     env_file: ./stop_bang_agent_mypage/.env
     restart: 'no'
 
+  stop_bang_bookmark:
+    image: stop_bang_bookmark
+    build:
+      context: ./stop_bang_bookmark
+      dockerfile: Dockerfile
+    container_name: stop_bang_bookmark
+    env_file: ./stop_bang_bookmark/.env
+    restart: 'no'
+
   # stop_bang_sub_feature_DB:
   #   image: stop_bang_sub_feature_db
   #   build:
