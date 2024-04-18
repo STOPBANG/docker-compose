@@ -5,6 +5,8 @@
     "stop_bang_resident_mypage": "https://github.com/STOPBANG/stop_bang_resident_mypage.git",
     "stop_bang_realtor_page": "https://github.com/STOPBANG/stop_bang_realtor_page.git",
     "stop_bang_map": "https://github.com/STOPBANG/stop_bang_map_page.git",
-    "stop_bang_sub_feature_DB": "https://github.com/STOPBANG/stop_bang_sub_feature_DB.git"
+    "stop_bang_sub_feature_DB": "https://github.com/STOPBANG/stop_bang_sub_feature_DB.git",
+    "stop_bang_auth_DB": "https://github.com/STOPBANG/stop_bang_auth_DB.git",
+    "stop_bang_agent_mypage": "https://github.com/STOPBANG/stop_bang_agent_mypage.git"
   }
 }
