@@ -1,4 +1,7 @@
 .env
+.env_auth_db
+.DS_store
+
 /stop_bang_main/
 /stop_bang_login_logout/
 /stop_bang_resident_mypage/
