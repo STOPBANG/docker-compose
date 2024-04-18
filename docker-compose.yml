@@ -47,3 +47,12 @@ services:
     container_name: stop_bang_sub_feature_db
     env_file: ./stop_bang_sub_feature_DB/.env
     restart: 'no'
+
+  auth_db:
+    image: mysql
+    restart: always
+    container_name: auth_db
+    env_file: ./.env_auth_db
+    volumes:
+      - ./auth_db_init:/docker-entrypoint-initdb.d
+    restart: 'no'
