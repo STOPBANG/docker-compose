@@ -81,3 +81,11 @@ services:
     volumes:
       - ./sub_db_init:/docker-entrypoint-initdb.d
     restart: 'no'
+
+  review_db:
+    image: mysql
+    container_name: review_db
+    env_file: ./.env_auth_db
+    volumes:
+      - ./review_db_init:/docker-entrypoint-initdb.d
+    restart: 'no'
