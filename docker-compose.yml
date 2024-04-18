@@ -39,14 +39,14 @@ services:
     env_file: ./stop_bang_realtor_page/.env
     restart: 'no'
 
-  stop_bang_agent_mypage:
-    image: stop_bang_agent_mypage
-    build:
-      context: ./stop_bang_agent_mypage
-      dockerfile: Dockerfile
-    container_name: stop_bang_agent_mypage
-    env_file: ./stop_bang_agent_mypage/.env
-    restart: 'no'
+  # stop_bang_agent_mypage:
+  #   image: stop_bang_agent_mypage
+  #   build:
+  #     context: ./stop_bang_agent_mypage
+  #     dockerfile: Dockerfile
+  #   container_name: stop_bang_agent_mypage
+  #   env_file: ./stop_bang_agent_mypage/.env
+  #   restart: 'no'
 
   stop_bang_bookmark:
     image: stop_bang_bookmark
@@ -72,4 +72,12 @@ services:
     env_file: ./.env_auth_db
     volumes:
       - ./auth_db_init:/docker-entrypoint-initdb.d
+    restart: 'no'
+
+  sub_db:
+    image: mysql
+    container_name: sub_db
+    env_file: ./.env_auth_db
+    volumes:
+      - ./sub_db_init:/docker-entrypoint-initdb.d
     restart: 'no'
