@@ -86,6 +86,16 @@ services:
     depends_on:
       - 'auth_db'
 
+  stop_bang_review_DB:
+    image: stop_bang_review_db
+    build:
+      context: ./stop_bang_review_DB
+      dockerfile: Dockerfile
+    container_name: stop_bang_review_DB
+    restart: no
+    depends_on:
+      - 'review_db'
+
   auth_db:
     image: mysql
     container_name: auth_db
@@ -104,6 +114,4 @@ services:
     image: mysql
     container_name: review_db
     env_file: ./.env_auth_db
-    volumes:
-      - ./review_db_init:/docker-entrypoint-initdb.d
     restart: 'no'
