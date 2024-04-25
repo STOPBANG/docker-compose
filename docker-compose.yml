@@ -65,6 +65,7 @@ services:
     container_name: stop_bang_map
     env_file: ./stop_bang_map/.env
     restart: 'no'
+    
 # DB 관련 마이크로서비스
   # stop_bang_sub_feature_DB:
   #   image: stop_bang_sub_feature_db
