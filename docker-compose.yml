@@ -76,13 +76,13 @@ services:
     restart: 'no'
     
 # DB 관련 마이크로서비스
-  stop_bang_sub_feature_DB:
-    image: stop_bang_sub_feature_db
+  stop_bang_sub_DB:
+    image: stop_bang_sub_db
     build:
-      context: ./stop_bang_sub_feature_DB
+      context: ./stop_bang_sub_DB
       dockerfile: Dockerfile
-    container_name: stop_bang_sub_feature_db
-    env_file: ./stop_bang_sub_feature_DB/.env
+    container_name: stop_bang_sub_db
+    env_file: ./stop_bang_sub_DB/.env
     restart: 'no'
     depends_on:
       - 'sub_db'
