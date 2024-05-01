@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`bookmark` (
 CREATE TABLE IF NOT EXISTS `mydb`.`report` (
     `reporter` VARCHAR(45) NOT NULL,
     `repo_rv_id` INT NOT NULL,
+    `sys_regno` VARCHAR(45) NOT NULL,
     `reportee` VARCHAR(45) NOT NULL UNIQUE,
     `reason` INT,
     CONSTRAINT PK_Report PRIMARY KEY (reporter, repo_rv_id)
