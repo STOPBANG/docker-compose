@@ -10,6 +10,7 @@
     "stop_bang_agent_mypage": "https://github.com/STOPBANG/stop_bang_agent_mypage.git",
     "stop_bang_bookmark": "https://github.com/STOPBANG/stop_bang_bookmark.git",
     "stop_bang_review_DB": "https://github.com/STOPBANG/stop_bang_review_DB.git",
-    "stop_bang_register": "https://github.com/STOPBANG/stop_bang_register.git"
+    "stop_bang_register": "https://github.com/STOPBANG/stop_bang_register.git",
+    "stop_bang_review": "https://github.com/STOPBANG/stop_bang_review.git"
   }
 }
