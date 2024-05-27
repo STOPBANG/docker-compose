@@ -2,18 +2,4 @@
 .env_auth_db
 .DS_Store
 
-/stop_bang_main/
-/stop_bang_login_logout/
-/stop_bang_resident_mypage/
-/stop_bang_realtor_page/
-/stop_bang_map/
-/stop_bang_sub_feature_DB/
-/https:/github.com/STOPBANG/stop_bang_auth_DB.git/
-/stop_bang_auth_DB/
-/stop_bang_sub_DB/
-/https:/github.com/STOPBANG/stop_bang_agent_mypage.git/
-/stop_bang_agent_mypage/
-/stop_bang_bookmark/
-/stop_bang_review_DB/
-/stop_bang_register/
-/stop_bang_review/
+stop_bang_*/
