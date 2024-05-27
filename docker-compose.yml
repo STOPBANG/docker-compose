@@ -29,34 +29,16 @@ services:
     container_name: stop_bang_login_logout
     env_file: ./stop_bang_login_logout/.env
     restart: 'no'
-  
-  stop_bang_resident_mypage:
-    image: stop_bang_resident_mypage
-    build:
-      context: ./stop_bang_resident_mypage
-      dockerfile: Dockerfile
-    container_name: stop_bang_resident_mypage
-    env_file: ./stop_bang_resident_mypage/.env
-    restart: 'no'
 
-  stop_bang_realtor_page:
-    image: stop_bang_realtor_page
+  stop_bang_mypage:
+    image: stop_bang_mypage
     build:
-      context: ./stop_bang_realtor_page
+      context: ./stop_bang_mypage
       dockerfile: Dockerfile
-    container_name: stop_bang_realtor_page
-    env_file: ./stop_bang_realtor_page/.env
+    container_name: stop_bang_mypage
+    env_file: ./stop_bang_mypage/.env
     restart: 'no'
-
-  stop_bang_agent_mypage:
-    image: stop_bang_agent_mypage
-    build:
-      context: ./stop_bang_agent_mypage
-      dockerfile: Dockerfile
-    container_name: stop_bang_agent_mypage
-    env_file: ./stop_bang_agent_mypage/.env
-    restart: 'no'
-
+    
   stop_bang_bookmark:
     image: stop_bang_bookmark
     build:

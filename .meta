@@ -2,12 +2,10 @@
   "projects": {
     "stop_bang_main": "https://github.com/STOPBANG/stop_bang",
     "stop_bang_login_logout": "https://github.com/STOPBANG/stop_bang_login_logout",
-    "stop_bang_resident_mypage": "https://github.com/STOPBANG/stop_bang_resident_mypage.git",
-    "stop_bang_realtor_page": "https://github.com/STOPBANG/stop_bang_realtor_page.git",
+    "stop_bang_mypage": "https://github.com/STOPBANG/stop_bang_mypage.git",
     "stop_bang_map": "https://github.com/STOPBANG/stop_bang_map_page.git",
     "stop_bang_sub_DB": "https://github.com/STOPBANG/stop_bang_sub_DB.git",
     "stop_bang_auth_DB": "https://github.com/STOPBANG/stop_bang_auth_DB.git",
-    "stop_bang_agent_mypage": "https://github.com/STOPBANG/stop_bang_agent_mypage.git",
     "stop_bang_bookmark": "https://github.com/STOPBANG/stop_bang_bookmark.git",
     "stop_bang_review_DB": "https://github.com/STOPBANG/stop_bang_review_DB.git",
     "stop_bang_register": "https://github.com/STOPBANG/stop_bang_register.git",
