@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mysql-auth-pvc
+  name: mysql-sub-pvc
 spec:
   accessModes:
     - ReadWriteOnce
@@ -13,49 +13,50 @@ spec:
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: auth-db-sfs
+  name: sub-db
 spec:
   selector:
     matchLabels:
-      app: auth-db-sfs
+      app: sub-db
       app.kubernetes.io/name: mysql
-  serviceName: "auth-db"
+  serviceName: "sub-db"
   replicas: 1
   template:
     metadata:
       labels:
-        app: auth-db
+        app: sub-db
         app.kubernetes.io/name: mysql
     spec:
       containers:
-      - name: auth-db
+      - name: sub-db
         image: mysql:5.7
         ports:
         - containerPort: 3306
         volumeMounts:
-        - name: mysql-auth-vol
+        - name: mysql-sub-vol
           mountPath: /var/lib/mysql
           subPath: mysql
         envFrom:
         - configMapRef:
             name: db-env
+        envFrom:
         - secretRef:
             name: db-credentials
       volumes:
-      - name: mysql-auth-vol
+      - name: mysql-sub-vol
         persistentVolumeClaim:
-          claimName: mysql-auth-pvc
+          claimName: mysql-sub-pvc
 
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: auth-db
+  name: sub-db
   labels:
-    app: auth-db
+    app: sub-db
     app.kubernetes.io/name: mysql
 spec:
   ports:
   - port: 3306
   selector:
-    app: auth-db
+    app: sub-db
