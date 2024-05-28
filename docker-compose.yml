@@ -65,6 +65,20 @@ services:
     container_name: stop_bang_review
     env_file: ./stop_bang_review/.env
     restart: 'no'
+    depends_on:
+      - rabbit
+    
+# 간접메시징을 위한 RabbitMQ 서버
+  rabbit:
+    image: rabbitmq:3.8.5-management
+    container_name: rabbit
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    expose:
+      - "5672"
+      - "15672"
+    restart: always
     
 # DB 관련 마이크로서비스
   stop_bang_sub_DB:
@@ -76,6 +90,7 @@ services:
     restart: 'no'
     depends_on:
       - 'sub_db'
+      - 'rabbit'
 
   stop_bang_auth_DB:
     image: stop_bang_auth_db
