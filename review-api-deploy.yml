@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: review-api-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: review-api
+  template:
+    metadata:
+      labels:
+        app: review-api
+    spec:
+      containers:
+      - name: review-api
+        image: ywonchae1/stopbang-review-api
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: review-api-env
+        - secretRef:
+            name: review-api-credentials
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: review-api
+spec:
+  ports:
+  - port: 3000
+  selector:
+    app: review-api
+
