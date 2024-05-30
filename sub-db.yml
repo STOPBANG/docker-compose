@@ -39,7 +39,6 @@ spec:
         envFrom:
         - configMapRef:
             name: db-env
-        envFrom:
         - secretRef:
             name: db-credentials
       volumes:
