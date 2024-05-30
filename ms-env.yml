@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ms-env
+data:
+  PORT: '3000'
+  DB_HOST: '34.47.77.4'
+  DB_USER: cloudcomputing
+  DB_PORT: '4406'
+  DB_NAME: mydb
+  NODEMAILER_ID: subinuhm1129
+  MAILER_HOST: smtp.gmail.com
+  CERTIFICATION_EMAIL: subinuhm1129
+  GCP_PROJECT_ID: cloud-computing-419123
+  GCP_KEYFILE_PATH: config/cloud-computing-419123-eafb9b1cd38a.json
+  GCP_BUCKET_NAME: stopbang_bucket
