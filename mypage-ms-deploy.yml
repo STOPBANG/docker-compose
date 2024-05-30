@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mypage-ms-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mypage-ms
+  template:
+    metadata:
+      labels:
+        app: mypage-ms
+    spec:
+      containers:
+      - name: mypage-ms
+        image: ywonchae1/stopbang-mypage-ms
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: ms-env
+        - secretRef:
+            name: ms-credentials
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mypage-ms
+spec:
+  ports:
+  - port: 3000
+  selector:
+    app: mypage-ms
+

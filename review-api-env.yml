@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: review-api-env
+data:
+  USERNAME: cloudcomputing
+  DATABASE: mydb
+  HOST: review-db
+  DIALECT: mysql

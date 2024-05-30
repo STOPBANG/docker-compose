@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: map-ms-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: map-ms
+  template:
+    metadata:
+      labels:
+        app: map-ms
+    spec:
+      containers:
+      - name: map-ms
+        image: ywonchae1/stopbang-map-ms
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: ms-env
+        - secretRef:
+            name: ms-credentials
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: map-ms
+spec:
+  ports:
+  - port: 3000
+  selector:
+    app: map-ms
+

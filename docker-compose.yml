@@ -10,7 +10,7 @@ services:
     ports:
       - '3000:3000'
     env_file: ./stop_bang_main/.env
-    restart: 'no'
+    restart: 'always'
   
   stop_bang_register:
     image: stop_bang_register
@@ -19,7 +19,7 @@ services:
       dockerfile: Dockerfile
     container_name: stop_bang_register
     env_file: ./stop_bang_register/.env
-    restart: 'no'
+    restart: 'always'
 
   stop_bang_login_logout:
     image: stop_bang_login_logout
@@ -28,7 +28,7 @@ services:
       dockerfile: Dockerfile
     container_name: stop_bang_login_logout
     env_file: ./stop_bang_login_logout/.env
-    restart: 'no'
+    restart: 'always'
 
   stop_bang_mypage:
     image: stop_bang_mypage
@@ -37,7 +37,7 @@ services:
       dockerfile: Dockerfile
     container_name: stop_bang_mypage
     env_file: ./stop_bang_mypage/.env
-    restart: 'no'
+    restart: 'always'
     
   stop_bang_bookmark:
     image: stop_bang_bookmark
@@ -46,7 +46,7 @@ services:
       dockerfile: Dockerfile
     container_name: stop_bang_bookmark
     env_file: ./stop_bang_bookmark/.env
-    restart: 'no'
+    restart: 'always'
 
   stop_bang_map:
     image: stop_bang_map
@@ -55,7 +55,7 @@ services:
       dockerfile: Dockerfile
     container_name: stop_bang_map
     env_file: ./stop_bang_map/.env
-    restart: 'no'
+    restart: 'always'
 
   stop_bang_review:
     image: stop_bang_review
@@ -64,7 +64,7 @@ services:
       dockerfile: Dockerfile
     container_name: stop_bang_review
     env_file: ./stop_bang_review/.env
-    restart: 'no'
+    restart: 'always'
     depends_on:
       - rabbit
     
@@ -87,7 +87,8 @@ services:
       context: ./stop_bang_sub_DB
       dockerfile: Dockerfile
     container_name: stop_bang_sub_db
-    restart: 'no'
+    env_file: ./stop_bang_sub_DB/.env
+    restart: 'always'
     depends_on:
       - 'sub_db'
       - 'rabbit'
@@ -98,7 +99,8 @@ services:
       context: ./stop_bang_auth_DB
       dockerfile: Dockerfile
     container_name: stop_bang_auth_db
-    restart: no
+    env_file: ./stop_bang_auth_DB/.env
+    restart: always
     depends_on:
       - 'auth_db'
 
@@ -108,7 +110,8 @@ services:
       context: ./stop_bang_review_DB
       dockerfile: Dockerfile
     container_name: stop_bang_review_DB
-    restart: no
+    env_file: ./stop_bang_review_DB/.env
+    restart: always
     depends_on:
       - 'review_db'
 
@@ -116,7 +119,7 @@ services:
     image: mysql
     container_name: auth_db
     env_file: ./.env_auth_db
-    restart: 'no'
+    restart: 'always'
 
   sub_db:
     image: mysql
@@ -124,10 +127,10 @@ services:
     env_file: ./.env_auth_db
     # volumes:
     #   - ./sub_db_init:/docker-entrypoint-initdb.d
-    restart: 'no'
+    restart: 'always'
 
   review_db:
     image: mysql
     container_name: review_db
     env_file: ./.env_auth_db
-    restart: 'no'
+    restart: 'always'

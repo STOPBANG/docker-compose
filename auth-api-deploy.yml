@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-api-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth-api
+  template:
+    metadata:
+      labels:
+        app: auth-api
+    spec:
+      containers:
+      - name: auth-api
+        image: ywonchae1/stopbang-auth-api
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: auth-api-env
+        - secretRef:
+            name: auth-api-credentials
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth-api
+spec:
+  ports:
+  - port: 3000
+  selector:
+    app: auth-api
+

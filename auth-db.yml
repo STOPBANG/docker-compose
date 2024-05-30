@@ -13,11 +13,11 @@ spec:
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: auth-db-sfs
+  name: auth-db
 spec:
   selector:
     matchLabels:
-      app: auth-db-sfs
+      app: auth-db
       app.kubernetes.io/name: mysql
   serviceName: "auth-db"
   replicas: 1
