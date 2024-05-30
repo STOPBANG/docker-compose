@@ -6,7 +6,7 @@ services:
     build:
       context: ./stop_bang_main
       dockerfile: Dockerfile
-    container_name: stop_bang_main
+    container_name: main-ms
     ports:
       - '3000:3000'
     env_file: ./stop_bang_main/.env
@@ -17,7 +17,7 @@ services:
     build:
       context: ./stop_bang_register
       dockerfile: Dockerfile
-    container_name: stop_bang_register
+    container_name: register-ms
     env_file: ./stop_bang_register/.env
     restart: 'always'
 
@@ -26,7 +26,7 @@ services:
     build:
       context: ./stop_bang_login_logout
       dockerfile: Dockerfile
-    container_name: stop_bang_login_logout
+    container_name: login-logout-ms
     env_file: ./stop_bang_login_logout/.env
     restart: 'always'
 
@@ -35,7 +35,7 @@ services:
     build:
       context: ./stop_bang_mypage
       dockerfile: Dockerfile
-    container_name: stop_bang_mypage
+    container_name: mypage-ms
     env_file: ./stop_bang_mypage/.env
     restart: 'always'
     
@@ -44,7 +44,7 @@ services:
     build:
       context: ./stop_bang_bookmark
       dockerfile: Dockerfile
-    container_name: stop_bang_bookmark
+    container_name: bookmark-ms
     env_file: ./stop_bang_bookmark/.env
     restart: 'always'
 
@@ -53,7 +53,7 @@ services:
     build:
       context: ./stop_bang_map
       dockerfile: Dockerfile
-    container_name: stop_bang_map
+    container_name: map-ms
     env_file: ./stop_bang_map/.env
     restart: 'always'
 
@@ -62,7 +62,7 @@ services:
     build:
       context: ./stop_bang_review
       dockerfile: Dockerfile
-    container_name: stop_bang_review
+    container_name: review-ms
     env_file: ./stop_bang_review/.env
     restart: 'always'
     depends_on:
@@ -71,7 +71,7 @@ services:
 # 간접메시징을 위한 RabbitMQ 서버
   rabbit:
     image: rabbitmq:3.8.5-management
-    container_name: rabbit
+    container_name: rabbitmq
     ports:
       - "5672:5672"
       - "15672:15672"
@@ -86,7 +86,7 @@ services:
     build:
       context: ./stop_bang_sub_DB
       dockerfile: Dockerfile
-    container_name: stop_bang_sub_db
+    container_name: sub-api
     env_file: ./stop_bang_sub_DB/.env
     restart: 'always'
     depends_on:
@@ -98,7 +98,7 @@ services:
     build:
       context: ./stop_bang_auth_DB
       dockerfile: Dockerfile
-    container_name: stop_bang_auth_db
+    container_name: auth-api
     env_file: ./stop_bang_auth_DB/.env
     restart: always
     depends_on:
@@ -109,7 +109,7 @@ services:
     build:
       context: ./stop_bang_review_DB
       dockerfile: Dockerfile
-    container_name: stop_bang_review_DB
+    container_name: review-api
     env_file: ./stop_bang_review_DB/.env
     restart: always
     depends_on:
@@ -117,13 +117,13 @@ services:
 
   auth_db:
     image: mysql
-    container_name: auth_db
+    container_name: auth-db
     env_file: ./.env_auth_db
     restart: 'always'
 
   sub_db:
     image: mysql
-    container_name: sub_db
+    container_name: sub-db
     env_file: ./.env_auth_db
     # volumes:
     #   - ./sub_db_init:/docker-entrypoint-initdb.d
@@ -131,6 +131,6 @@ services:
 
   review_db:
     image: mysql
-    container_name: review_db
+    container_name: review-db
     env_file: ./.env_auth_db
     restart: 'always'
