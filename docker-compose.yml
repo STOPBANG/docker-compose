@@ -91,6 +91,7 @@ services:
     restart: 'always'
     depends_on:
       - 'sub_db'
+      - 'rabbit'
 
   stop_bang_auth_DB:
     image: stop_bang_auth_db
