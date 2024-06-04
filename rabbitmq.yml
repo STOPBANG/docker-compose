@@ -11,27 +11,39 @@ spec:
   template:
     metadata:
       labels:
-        name: rabbitmq
         app: rabbitmq
     spec:
       containers:
       - name: rabbitmq
-        image: rabbitmq:3.8
+        image: rabbitmq:3.8-management
         ports:
-          - name: http
-            protocol: TCP
-            containerPort: 15672
-          - name: amqp
-            protocol: TCP
-            containerPort: 5672
+        - containerPort: 5672
+        - containerPort: 15672 # RabbitMQ Management UI
+        volumeMounts:
+        - name: rabbitmq-data
+          mountPath: /var/lib/rabbitmq
+  volumeClaimTemplates:
+  - metadata:
+      name: rabbitmq-data
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 1Gi  # Adjust the storage size as needed
 
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: rabbitmq
+  name: rabbit # 여길 rabbitmq로 하면 안 되는 이유?
 spec:
-  ports:
-  - port: 5672
+  type: LoadBalancer
   selector:
     app: rabbitmq
+  ports:
+  - name: amqp
+    protocol: TCP
+    port: 5672
+  - name: http
+    protocol: TCP
+    port: 15672

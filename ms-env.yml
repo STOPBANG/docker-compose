@@ -14,3 +14,5 @@ data:
   GCP_PROJECT_ID: cloud-computing-419123
   GCP_KEYFILE_PATH: config/cloud-computing-419123-eafb9b1cd38a.json
   GCP_BUCKET_NAME: stopbang_bucket
+  RABBITMQ_HOST: rabbit
+  RABBITMQ_PORT: "5672"
