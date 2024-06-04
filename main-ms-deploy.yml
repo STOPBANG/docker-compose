@@ -35,7 +35,8 @@ spec:
   type: LoadBalancer
   loadBalancerIP: 34.47.66.50
   ports:
-  - port: 3000
+  - port: 80
+    targetPort: 3000
   selector:
     app: main-ms
 
