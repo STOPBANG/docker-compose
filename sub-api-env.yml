@@ -7,3 +7,5 @@ data:
   DATABASE: mydb
   HOST: sub-db
   DIALECT: mysql
+  RABBITMQ_HOST: rabbit
+  RABBITMQ_PORT: "5672"

@@ -22,9 +22,6 @@ spec:
             name: sub-api-env
         - secretRef:
             name: sub-api-credentials
-        env:
-        - name: RABBIT
-          value: amqp://rabbitmq
 
 ---
 apiVersion: v1
