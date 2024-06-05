@@ -1,0 +1,889 @@
+Name:               gke-kubernetes-default-pool-d260bc63-1bsd
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=custom-1-1024
+                    beta.kubernetes.io/os=linux
+                    cloud.google.com/gke-boot-disk=pd-balanced
+                    cloud.google.com/gke-container-runtime=containerd
+                    cloud.google.com/gke-cpu-scaling-level=1
+                    cloud.google.com/gke-logging-variant=DEFAULT
+                    cloud.google.com/gke-max-pods-per-node=110
+                    cloud.google.com/gke-nodepool=default-pool
+                    cloud.google.com/gke-os-distribution=cos
+                    cloud.google.com/gke-provisioning=standard
+                    cloud.google.com/gke-stack-type=IPV4
+                    cloud.google.com/machine-family=custom-1
+                    cloud.google.com/private-node=false
+                    failure-domain.beta.kubernetes.io/region=asia-northeast3
+                    failure-domain.beta.kubernetes.io/zone=asia-northeast3-b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=gke-kubernetes-default-pool-d260bc63-1bsd
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=custom-1-1024
+                    topology.gke.io/zone=asia-northeast3-b
+                    topology.kubernetes.io/region=asia-northeast3
+                    topology.kubernetes.io/zone=asia-northeast3-b
+Annotations:        container.googleapis.com/instance_id: 1748963462592096585
+                    csi.volume.kubernetes.io/nodeid:
+                      {"pd.csi.storage.gke.io":"projects/cloud-418310/zones/asia-northeast3-b/instances/gke-kubernetes-default-pool-d260bc63-1bsd"}
+                    node.alpha.kubernetes.io/ttl: 0
+                    node.gke.io/last-applied-node-labels:
+                      cloud.google.com/gke-boot-disk=pd-balanced,cloud.google.com/gke-container-runtime=containerd,cloud.google.com/gke-cpu-scaling-level=1,clou...
+                    node.gke.io/last-applied-node-taints: 
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 03 Jun 2024 23:48:50 +0900
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  gke-kubernetes-default-pool-d260bc63-1bsd
+  AcquireTime:     <unset>
+  RenewTime:       Tue, 04 Jun 2024 12:45:46 +0900
+Conditions:
+  Type                          Status  LastHeartbeatTime                 LastTransitionTime                Reason                          Message
+  ----                          ------  -----------------                 ------------------                ------                          -------
+  SysctlChanged                 True    Tue, 04 Jun 2024 12:45:27 +0900   Mon, 03 Jun 2024 23:48:56 +0900   NodeSysctlChange                {"unmanaged": {"net.netfilter.nf_conntrack_buckets": "32768"}}
+  KernelDeadlock                False   Tue, 04 Jun 2024 12:45:27 +0900   Mon, 03 Jun 2024 23:48:56 +0900   KernelHasNoDeadlock             kernel has no deadlock
+  ReadonlyFilesystem            False   Tue, 04 Jun 2024 12:45:27 +0900   Mon, 03 Jun 2024 23:48:56 +0900   FilesystemIsNotReadOnly         Filesystem is not read-only
+  FrequentUnregisterNetDevice   False   Tue, 04 Jun 2024 12:45:27 +0900   Mon, 03 Jun 2024 23:48:56 +0900   NoFrequentUnregisterNetDevice   node is functioning properly
+  CorruptDockerOverlay2         False   Tue, 04 Jun 2024 12:45:27 +0900   Mon, 03 Jun 2024 23:48:56 +0900   NoCorruptDockerOverlay2         docker overlay2 is functioning properly
+  FrequentKubeletRestart        False   Tue, 04 Jun 2024 12:45:27 +0900   Mon, 03 Jun 2024 23:48:56 +0900   NoFrequentKubeletRestart        kubelet is functioning properly
+  FrequentDockerRestart         False   Tue, 04 Jun 2024 12:45:27 +0900   Mon, 03 Jun 2024 23:48:56 +0900   NoFrequentDockerRestart         docker is functioning properly
+  FrequentContainerdRestart     False   Tue, 04 Jun 2024 12:45:27 +0900   Mon, 03 Jun 2024 23:48:56 +0900   NoFrequentContainerdRestart     containerd is functioning properly
+  NetworkUnavailable            False   Mon, 03 Jun 2024 23:48:55 +0900   Mon, 03 Jun 2024 23:48:53 +0900   RouteCreated                    NodeController create implicit route
+  MemoryPressure                False   Tue, 04 Jun 2024 12:43:46 +0900   Mon, 03 Jun 2024 23:48:48 +0900   KubeletHasSufficientMemory      kubelet has sufficient memory available
+  DiskPressure                  False   Tue, 04 Jun 2024 12:43:46 +0900   Tue, 04 Jun 2024 08:25:18 +0900   KubeletHasNoDiskPressure        kubelet has no disk pressure
+  PIDPressure                   False   Tue, 04 Jun 2024 12:43:46 +0900   Mon, 03 Jun 2024 23:48:48 +0900   KubeletHasSufficientPID         kubelet has sufficient PID available
+  Ready                         True    Tue, 04 Jun 2024 12:43:46 +0900   Mon, 03 Jun 2024 23:48:55 +0900   KubeletReady                    kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  10.178.0.43
+  ExternalIP:  34.47.88.63
+  Hostname:    gke-kubernetes-default-pool-d260bc63-1bsd
+Capacity:
+  cpu:                1
+  ephemeral-storage:  5952044Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             993764Ki
+  pods:               110
+Allocatable:
+  cpu:                940m
+  ephemeral-storage:  116694622
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             629220Ki
+  pods:               110
+System Info:
+  Machine ID:                 e627d4ef4f9324126e681e453abf3abc
+  System UUID:                e627d4ef-4f93-2412-6e68-1e453abf3abc
+  Boot ID:                    782feda0-c7e3-41a2-bcb7-7ef281a0d0ad
+  Kernel Version:             6.1.75+
+  OS Image:                   Container-Optimized OS from Google
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.13
+  Kubelet Version:            v1.28.9-gke.1000000
+  Kube-Proxy Version:         v1.28.9-gke.1000000
+PodCIDR:                      10.20.5.0/24
+PodCIDRs:                     10.20.5.0/24
+ProviderID:                   gce://cloud-418310/asia-northeast3-b/gke-kubernetes-default-pool-d260bc63-1bsd
+Non-terminated Pods:          (9 in total)
+  Namespace                   Name                                                    CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                    ------------  ----------  ---------------  -------------  ---
+  default                     bookmark-ms-deploy-ff884677c-bg8jn                      0 (0%)        0 (0%)      0 (0%)           0 (0%)         110m
+  default                     mypage-ms-deploy-774db597dd-ft9b6                       0 (0%)        0 (0%)      0 (0%)           0 (0%)         109m
+  default                     review-db-0                                             0 (0%)        0 (0%)      0 (0%)           0 (0%)         110m
+  gmp-system                  collector-442zx                                         5m (0%)       0 (0%)      36M (5%)         3032M (470%)   12h
+  kube-system                 fluentbit-gke-6hxh5                                     100m (10%)    0 (0%)      200Mi (32%)      500Mi (81%)    12h
+  kube-system                 gke-metrics-agent-dcj2k                                 14m (1%)      0 (0%)      160Mi (26%)      160Mi (26%)    12h
+  kube-system                 konnectivity-agent-6fd68b978f-nqcm8                     15m (1%)      0 (0%)      60Mi (9%)        155Mi (25%)    12h
+  kube-system                 kube-proxy-gke-kubernetes-default-pool-d260bc63-1bsd    100m (10%)    0 (0%)      0 (0%)           0 (0%)         12h
+  kube-system                 pdcsi-node-rjhmt                                        10m (1%)      0 (0%)      20Mi (3%)        100Mi (16%)    12h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests         Limits
+  --------           --------         ------
+  cpu                244m (25%)       0 (0%)
+  memory             497373440 (77%)  3991447040 (619%)
+  ephemeral-storage  0 (0%)           0 (0%)
+  hugepages-1Gi      0 (0%)           0 (0%)
+  hugepages-2Mi      0 (0%)           0 (0%)
+Events:              <none>
+
+
+Name:               gke-kubernetes-default-pool-d260bc63-6zmn
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=custom-1-1024
+                    beta.kubernetes.io/os=linux
+                    cloud.google.com/gke-boot-disk=pd-balanced
+                    cloud.google.com/gke-container-runtime=containerd
+                    cloud.google.com/gke-cpu-scaling-level=1
+                    cloud.google.com/gke-logging-variant=DEFAULT
+                    cloud.google.com/gke-max-pods-per-node=110
+                    cloud.google.com/gke-nodepool=default-pool
+                    cloud.google.com/gke-os-distribution=cos
+                    cloud.google.com/gke-provisioning=standard
+                    cloud.google.com/gke-stack-type=IPV4
+                    cloud.google.com/machine-family=custom-1
+                    cloud.google.com/private-node=false
+                    failure-domain.beta.kubernetes.io/region=asia-northeast3
+                    failure-domain.beta.kubernetes.io/zone=asia-northeast3-b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=gke-kubernetes-default-pool-d260bc63-6zmn
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=custom-1-1024
+                    topology.gke.io/zone=asia-northeast3-b
+                    topology.kubernetes.io/region=asia-northeast3
+                    topology.kubernetes.io/zone=asia-northeast3-b
+Annotations:        container.googleapis.com/instance_id: 5299223595999848777
+                    csi.volume.kubernetes.io/nodeid:
+                      {"pd.csi.storage.gke.io":"projects/cloud-418310/zones/asia-northeast3-b/instances/gke-kubernetes-default-pool-d260bc63-6zmn"}
+                    node.alpha.kubernetes.io/ttl: 0
+                    node.gke.io/last-applied-node-labels:
+                      cloud.google.com/gke-boot-disk=pd-balanced,cloud.google.com/gke-container-runtime=containerd,cloud.google.com/gke-cpu-scaling-level=1,clou...
+                    node.gke.io/last-applied-node-taints: 
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 03 Jun 2024 23:48:50 +0900
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  gke-kubernetes-default-pool-d260bc63-6zmn
+  AcquireTime:     <unset>
+  RenewTime:       Tue, 04 Jun 2024 12:45:45 +0900
+Conditions:
+  Type                          Status  LastHeartbeatTime                 LastTransitionTime                Reason                          Message
+  ----                          ------  -----------------                 ------------------                ------                          -------
+  FrequentKubeletRestart        False   Tue, 04 Jun 2024 12:45:24 +0900   Mon, 03 Jun 2024 23:48:55 +0900   NoFrequentKubeletRestart        kubelet is functioning properly
+  FrequentDockerRestart         False   Tue, 04 Jun 2024 12:45:24 +0900   Mon, 03 Jun 2024 23:48:55 +0900   NoFrequentDockerRestart         docker is functioning properly
+  FrequentContainerdRestart     False   Tue, 04 Jun 2024 12:45:24 +0900   Mon, 03 Jun 2024 23:48:55 +0900   NoFrequentContainerdRestart     containerd is functioning properly
+  SysctlChanged                 True    Tue, 04 Jun 2024 12:45:24 +0900   Mon, 03 Jun 2024 23:48:56 +0900   NodeSysctlChange                {"unmanaged": {"net.netfilter.nf_conntrack_buckets": "32768"}}
+  FrequentUnregisterNetDevice   False   Tue, 04 Jun 2024 12:45:24 +0900   Mon, 03 Jun 2024 23:48:55 +0900   NoFrequentUnregisterNetDevice   node is functioning properly
+  CorruptDockerOverlay2         False   Tue, 04 Jun 2024 12:45:24 +0900   Mon, 03 Jun 2024 23:48:55 +0900   NoCorruptDockerOverlay2         docker overlay2 is functioning properly
+  KernelDeadlock                False   Tue, 04 Jun 2024 12:45:24 +0900   Mon, 03 Jun 2024 23:48:55 +0900   KernelHasNoDeadlock             kernel has no deadlock
+  ReadonlyFilesystem            False   Tue, 04 Jun 2024 12:45:24 +0900   Mon, 03 Jun 2024 23:48:55 +0900   FilesystemIsNotReadOnly         Filesystem is not read-only
+  NetworkUnavailable            False   Mon, 03 Jun 2024 23:48:55 +0900   Mon, 03 Jun 2024 23:48:53 +0900   RouteCreated                    NodeController create implicit route
+  MemoryPressure                False   Tue, 04 Jun 2024 12:42:20 +0900   Mon, 03 Jun 2024 23:48:47 +0900   KubeletHasSufficientMemory      kubelet has sufficient memory available
+  DiskPressure                  False   Tue, 04 Jun 2024 12:42:20 +0900   Mon, 03 Jun 2024 23:48:47 +0900   KubeletHasNoDiskPressure        kubelet has no disk pressure
+  PIDPressure                   False   Tue, 04 Jun 2024 12:42:20 +0900   Mon, 03 Jun 2024 23:48:47 +0900   KubeletHasSufficientPID         kubelet has sufficient PID available
+  Ready                         True    Tue, 04 Jun 2024 12:42:20 +0900   Mon, 03 Jun 2024 23:48:55 +0900   KubeletReady                    kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  10.178.0.45
+  ExternalIP:  34.47.67.253
+  Hostname:    gke-kubernetes-default-pool-d260bc63-6zmn
+Capacity:
+  cpu:                1
+  ephemeral-storage:  5952044Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             993764Ki
+  pods:               110
+Allocatable:
+  cpu:                940m
+  ephemeral-storage:  116694622
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             629220Ki
+  pods:               110
+System Info:
+  Machine ID:                 c18ed2a5b0332feec94ef98b4c9b21bb
+  System UUID:                c18ed2a5-b033-2fee-c94e-f98b4c9b21bb
+  Boot ID:                    1f748bf9-80d1-49fb-a1e9-906977bb7c46
+  Kernel Version:             6.1.75+
+  OS Image:                   Container-Optimized OS from Google
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.13
+  Kubelet Version:            v1.28.9-gke.1000000
+  Kube-Proxy Version:         v1.28.9-gke.1000000
+PodCIDR:                      10.20.7.0/24
+PodCIDRs:                     10.20.7.0/24
+ProviderID:                   gce://cloud-418310/asia-northeast3-b/gke-kubernetes-default-pool-d260bc63-6zmn
+Non-terminated Pods:          (8 in total)
+  Namespace                   Name                                                    CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                    ------------  ----------  ---------------  -------------  ---
+  default                     auth-api-deploy-659bccd5c7-4kp6k                        0 (0%)        0 (0%)      0 (0%)           0 (0%)         110m
+  default                     review-api-deploy-69788f888c-d92n9                      0 (0%)        0 (0%)      0 (0%)           0 (0%)         46m
+  gmp-system                  collector-7kzgf                                         5m (0%)       0 (0%)      36M (5%)         3032M (470%)   12h
+  gmp-system                  rule-evaluator-65d5cbf76d-zj8vv                         2m (0%)       0 (0%)      20M (3%)         1032M (160%)   12h
+  kube-system                 fluentbit-gke-sldk9                                     100m (10%)    0 (0%)      200Mi (32%)      500Mi (81%)    12h
+  kube-system                 gke-metrics-agent-qqg9c                                 14m (1%)      0 (0%)      160Mi (26%)      160Mi (26%)    12h
+  kube-system                 kube-proxy-gke-kubernetes-default-pool-d260bc63-6zmn    100m (10%)    0 (0%)      0 (0%)           0 (0%)         12h
+  kube-system                 pdcsi-node-txkq5                                        10m (1%)      0 (0%)      20Mi (3%)        100Mi (16%)    12h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests         Limits
+  --------           --------         ------
+  cpu                231m (24%)       0 (0%)
+  memory             454458880 (70%)  4860917760 (754%)
+  ephemeral-storage  0 (0%)           0 (0%)
+  hugepages-1Gi      0 (0%)           0 (0%)
+  hugepages-2Mi      0 (0%)           0 (0%)
+Events:              <none>
+
+
+Name:               gke-kubernetes-default-pool-d260bc63-7qg9
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=custom-1-1024
+                    beta.kubernetes.io/os=linux
+                    cloud.google.com/gke-boot-disk=pd-balanced
+                    cloud.google.com/gke-container-runtime=containerd
+                    cloud.google.com/gke-cpu-scaling-level=1
+                    cloud.google.com/gke-logging-variant=DEFAULT
+                    cloud.google.com/gke-max-pods-per-node=110
+                    cloud.google.com/gke-nodepool=default-pool
+                    cloud.google.com/gke-os-distribution=cos
+                    cloud.google.com/gke-provisioning=standard
+                    cloud.google.com/gke-stack-type=IPV4
+                    cloud.google.com/machine-family=custom-1
+                    cloud.google.com/private-node=false
+                    failure-domain.beta.kubernetes.io/region=asia-northeast3
+                    failure-domain.beta.kubernetes.io/zone=asia-northeast3-b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=gke-kubernetes-default-pool-d260bc63-7qg9
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=custom-1-1024
+                    topology.gke.io/zone=asia-northeast3-b
+                    topology.kubernetes.io/region=asia-northeast3
+                    topology.kubernetes.io/zone=asia-northeast3-b
+Annotations:        container.googleapis.com/instance_id: 7762574128383551817
+                    csi.volume.kubernetes.io/nodeid:
+                      {"pd.csi.storage.gke.io":"projects/cloud-418310/zones/asia-northeast3-b/instances/gke-kubernetes-default-pool-d260bc63-7qg9"}
+                    node.alpha.kubernetes.io/ttl: 0
+                    node.gke.io/last-applied-node-labels:
+                      cloud.google.com/gke-boot-disk=pd-balanced,cloud.google.com/gke-container-runtime=containerd,cloud.google.com/gke-cpu-scaling-level=1,clou...
+                    node.gke.io/last-applied-node-taints: 
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 03 Jun 2024 23:48:51 +0900
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  gke-kubernetes-default-pool-d260bc63-7qg9
+  AcquireTime:     <unset>
+  RenewTime:       Tue, 04 Jun 2024 12:45:47 +0900
+Conditions:
+  Type                          Status  LastHeartbeatTime                 LastTransitionTime                Reason                          Message
+  ----                          ------  -----------------                 ------------------                ------                          -------
+  FrequentUnregisterNetDevice   False   Tue, 04 Jun 2024 12:45:22 +0900   Mon, 03 Jun 2024 23:48:57 +0900   NoFrequentUnregisterNetDevice   node is functioning properly
+  FrequentKubeletRestart        False   Tue, 04 Jun 2024 12:45:22 +0900   Mon, 03 Jun 2024 23:48:57 +0900   NoFrequentKubeletRestart        kubelet is functioning properly
+  FrequentDockerRestart         False   Tue, 04 Jun 2024 12:45:22 +0900   Mon, 03 Jun 2024 23:48:57 +0900   NoFrequentDockerRestart         docker is functioning properly
+  FrequentContainerdRestart     False   Tue, 04 Jun 2024 12:45:22 +0900   Mon, 03 Jun 2024 23:48:57 +0900   NoFrequentContainerdRestart     containerd is functioning properly
+  SysctlChanged                 True    Tue, 04 Jun 2024 12:45:22 +0900   Mon, 03 Jun 2024 23:48:57 +0900   NodeSysctlChange                {"unmanaged": {"net.netfilter.nf_conntrack_buckets": "32768"}}
+  KernelDeadlock                False   Tue, 04 Jun 2024 12:45:22 +0900   Mon, 03 Jun 2024 23:48:57 +0900   KernelHasNoDeadlock             kernel has no deadlock
+  ReadonlyFilesystem            False   Tue, 04 Jun 2024 12:45:22 +0900   Mon, 03 Jun 2024 23:48:57 +0900   FilesystemIsNotReadOnly         Filesystem is not read-only
+  CorruptDockerOverlay2         False   Tue, 04 Jun 2024 12:45:22 +0900   Mon, 03 Jun 2024 23:48:57 +0900   NoCorruptDockerOverlay2         docker overlay2 is functioning properly
+  NetworkUnavailable            False   Mon, 03 Jun 2024 23:48:56 +0900   Mon, 03 Jun 2024 23:48:54 +0900   RouteCreated                    NodeController create implicit route
+  MemoryPressure                False   Tue, 04 Jun 2024 12:43:34 +0900   Mon, 03 Jun 2024 23:48:48 +0900   KubeletHasSufficientMemory      kubelet has sufficient memory available
+  DiskPressure                  False   Tue, 04 Jun 2024 12:43:34 +0900   Mon, 03 Jun 2024 23:48:48 +0900   KubeletHasNoDiskPressure        kubelet has no disk pressure
+  PIDPressure                   False   Tue, 04 Jun 2024 12:43:34 +0900   Mon, 03 Jun 2024 23:48:48 +0900   KubeletHasSufficientPID         kubelet has sufficient PID available
+  Ready                         True    Tue, 04 Jun 2024 12:43:34 +0900   Mon, 03 Jun 2024 23:48:57 +0900   KubeletReady                    kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  10.178.0.42
+  ExternalIP:  34.64.89.139
+  Hostname:    gke-kubernetes-default-pool-d260bc63-7qg9
+Capacity:
+  cpu:                1
+  ephemeral-storage:  5952044Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             993764Ki
+  pods:               110
+Allocatable:
+  cpu:                940m
+  ephemeral-storage:  116694622
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             629220Ki
+  pods:               110
+System Info:
+  Machine ID:                 5e497ccaf1b433b01ea1f5e586909e28
+  System UUID:                5e497cca-f1b4-33b0-1ea1-f5e586909e28
+  Boot ID:                    c5496b5b-4a2b-4958-b9c1-f4750f7821b7
+  Kernel Version:             6.1.75+
+  OS Image:                   Container-Optimized OS from Google
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.13
+  Kubelet Version:            v1.28.9-gke.1000000
+  Kube-Proxy Version:         v1.28.9-gke.1000000
+PodCIDR:                      10.20.4.0/24
+PodCIDRs:                     10.20.4.0/24
+ProviderID:                   gce://cloud-418310/asia-northeast3-b/gke-kubernetes-default-pool-d260bc63-7qg9
+Non-terminated Pods:          (8 in total)
+  Namespace                   Name                                                    CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                    ------------  ----------  ---------------  -------------  ---
+  default                     login-logout-ms-deploy-667f666d8c-ttgmh                 0 (0%)        0 (0%)      0 (0%)           0 (0%)         110m
+  default                     register-ms-deploy-55f6dd6cbd-7ms6n                     0 (0%)        0 (0%)      0 (0%)           0 (0%)         109m
+  gmp-system                  collector-qn796                                         5m (0%)       0 (0%)      36M (5%)         3032M (470%)   12h
+  kube-system                 fluentbit-gke-km64f                                     100m (10%)    0 (0%)      200Mi (32%)      500Mi (81%)    12h
+  kube-system                 gke-metrics-agent-nkq5t                                 14m (1%)      0 (0%)      160Mi (26%)      160Mi (26%)    12h
+  kube-system                 kube-proxy-gke-kubernetes-default-pool-d260bc63-7qg9    100m (10%)    0 (0%)      0 (0%)           0 (0%)         12h
+  kube-system                 metrics-server-v0.7.0-c87c9d5f6-cm6mp                   50m (5%)      45m (4%)    125Mi (20%)      375Mi (61%)    12h
+  kube-system                 pdcsi-node-cpqd7                                        10m (1%)      0 (0%)      20Mi (3%)        100Mi (16%)    12h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests         Limits
+  --------           --------         ------
+  cpu                279m (29%)       45m (4%)
+  memory             565530880 (87%)  4222133760 (655%)
+  ephemeral-storage  0 (0%)           0 (0%)
+  hugepages-1Gi      0 (0%)           0 (0%)
+  hugepages-2Mi      0 (0%)           0 (0%)
+Events:              <none>
+
+
+Name:               gke-kubernetes-default-pool-d260bc63-fr86
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=custom-1-1024
+                    beta.kubernetes.io/os=linux
+                    cloud.google.com/gke-boot-disk=pd-balanced
+                    cloud.google.com/gke-container-runtime=containerd
+                    cloud.google.com/gke-cpu-scaling-level=1
+                    cloud.google.com/gke-logging-variant=DEFAULT
+                    cloud.google.com/gke-max-pods-per-node=110
+                    cloud.google.com/gke-nodepool=default-pool
+                    cloud.google.com/gke-os-distribution=cos
+                    cloud.google.com/gke-provisioning=standard
+                    cloud.google.com/gke-stack-type=IPV4
+                    cloud.google.com/machine-family=custom-1
+                    cloud.google.com/private-node=false
+                    failure-domain.beta.kubernetes.io/region=asia-northeast3
+                    failure-domain.beta.kubernetes.io/zone=asia-northeast3-b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=gke-kubernetes-default-pool-d260bc63-fr86
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=custom-1-1024
+                    topology.gke.io/zone=asia-northeast3-b
+                    topology.kubernetes.io/region=asia-northeast3
+                    topology.kubernetes.io/zone=asia-northeast3-b
+Annotations:        container.googleapis.com/instance_id: 6474812215713098057
+                    csi.volume.kubernetes.io/nodeid:
+                      {"pd.csi.storage.gke.io":"projects/cloud-418310/zones/asia-northeast3-b/instances/gke-kubernetes-default-pool-d260bc63-fr86"}
+                    node.alpha.kubernetes.io/ttl: 0
+                    node.gke.io/last-applied-node-labels:
+                      cloud.google.com/gke-boot-disk=pd-balanced,cloud.google.com/gke-container-runtime=containerd,cloud.google.com/gke-cpu-scaling-level=1,clou...
+                    node.gke.io/last-applied-node-taints: 
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 03 Jun 2024 23:48:47 +0900
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  gke-kubernetes-default-pool-d260bc63-fr86
+  AcquireTime:     <unset>
+  RenewTime:       Tue, 04 Jun 2024 12:45:48 +0900
+Conditions:
+  Type                          Status  LastHeartbeatTime                 LastTransitionTime                Reason                          Message
+  ----                          ------  -----------------                 ------------------                ------                          -------
+  SysctlChanged                 True    Tue, 04 Jun 2024 12:45:31 +0900   Mon, 03 Jun 2024 23:48:53 +0900   NodeSysctlChange                {"unmanaged": {"net.netfilter.nf_conntrack_buckets": "32768"}}
+  CorruptDockerOverlay2         False   Tue, 04 Jun 2024 12:45:31 +0900   Mon, 03 Jun 2024 23:48:52 +0900   NoCorruptDockerOverlay2         docker overlay2 is functioning properly
+  KernelDeadlock                False   Tue, 04 Jun 2024 12:45:31 +0900   Mon, 03 Jun 2024 23:48:52 +0900   KernelHasNoDeadlock             kernel has no deadlock
+  ReadonlyFilesystem            False   Tue, 04 Jun 2024 12:45:31 +0900   Mon, 03 Jun 2024 23:48:52 +0900   FilesystemIsNotReadOnly         Filesystem is not read-only
+  FrequentUnregisterNetDevice   False   Tue, 04 Jun 2024 12:45:31 +0900   Mon, 03 Jun 2024 23:48:52 +0900   NoFrequentUnregisterNetDevice   node is functioning properly
+  FrequentKubeletRestart        False   Tue, 04 Jun 2024 12:45:31 +0900   Mon, 03 Jun 2024 23:48:52 +0900   NoFrequentKubeletRestart        kubelet is functioning properly
+  FrequentDockerRestart         False   Tue, 04 Jun 2024 12:45:31 +0900   Mon, 03 Jun 2024 23:48:52 +0900   NoFrequentDockerRestart         docker is functioning properly
+  FrequentContainerdRestart     False   Tue, 04 Jun 2024 12:45:31 +0900   Mon, 03 Jun 2024 23:48:52 +0900   NoFrequentContainerdRestart     containerd is functioning properly
+  NetworkUnavailable            False   Mon, 03 Jun 2024 23:48:51 +0900   Mon, 03 Jun 2024 23:48:49 +0900   RouteCreated                    NodeController create implicit route
+  MemoryPressure                False   Tue, 04 Jun 2024 12:42:18 +0900   Mon, 03 Jun 2024 23:48:45 +0900   KubeletHasSufficientMemory      kubelet has sufficient memory available
+  DiskPressure                  False   Tue, 04 Jun 2024 12:42:18 +0900   Tue, 04 Jun 2024 08:25:13 +0900   KubeletHasNoDiskPressure        kubelet has no disk pressure
+  PIDPressure                   False   Tue, 04 Jun 2024 12:42:18 +0900   Mon, 03 Jun 2024 23:48:45 +0900   KubeletHasSufficientPID         kubelet has sufficient PID available
+  Ready                         True    Tue, 04 Jun 2024 12:42:18 +0900   Mon, 03 Jun 2024 23:48:50 +0900   KubeletReady                    kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  10.178.0.44
+  ExternalIP:  34.64.188.218
+  Hostname:    gke-kubernetes-default-pool-d260bc63-fr86
+Capacity:
+  cpu:                1
+  ephemeral-storage:  5952044Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             993764Ki
+  pods:               110
+Allocatable:
+  cpu:                940m
+  ephemeral-storage:  116694622
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             629220Ki
+  pods:               110
+System Info:
+  Machine ID:                 4cca4eb6bb4fc5d9630c4235cc44a2fb
+  System UUID:                4cca4eb6-bb4f-c5d9-630c-4235cc44a2fb
+  Boot ID:                    5c4f64e8-e7cf-4d62-aae2-a6e72374b491
+  Kernel Version:             6.1.75+
+  OS Image:                   Container-Optimized OS from Google
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.13
+  Kubelet Version:            v1.28.9-gke.1000000
+  Kube-Proxy Version:         v1.28.9-gke.1000000
+PodCIDR:                      10.20.6.0/24
+PodCIDRs:                     10.20.6.0/24
+ProviderID:                   gce://cloud-418310/asia-northeast3-b/gke-kubernetes-default-pool-d260bc63-fr86
+Non-terminated Pods:          (7 in total)
+  Namespace                   Name                                                    CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                    ------------  ----------  ---------------  -------------  ---
+  default                     main-ms-deploy-797648655c-5dvcb                         0 (0%)        0 (0%)      0 (0%)           0 (0%)         27m
+  gmp-system                  collector-fsngt                                         5m (0%)       0 (0%)      36M (5%)         3032M (470%)   12h
+  kube-system                 event-exporter-gke-54d86d77bb-gb44z                     3m (0%)       0 (0%)      100Mi (16%)      0 (0%)         13h
+  kube-system                 fluentbit-gke-xz5j6                                     100m (10%)    0 (0%)      200Mi (32%)      500Mi (81%)    12h
+  kube-system                 gke-metrics-agent-rd7b8                                 14m (1%)      0 (0%)      160Mi (26%)      160Mi (26%)    12h
+  kube-system                 kube-proxy-gke-kubernetes-default-pool-d260bc63-fr86    100m (10%)    0 (0%)      0 (0%)           0 (0%)         12h
+  kube-system                 pdcsi-node-8lfzd                                        10m (1%)      0 (0%)      20Mi (3%)        100Mi (16%)    12h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests         Limits
+  --------           --------         ------
+  cpu                232m (24%)       0 (0%)
+  memory             539316480 (83%)  3828917760 (594%)
+  ephemeral-storage  0 (0%)           0 (0%)
+  hugepages-1Gi      0 (0%)           0 (0%)
+  hugepages-2Mi      0 (0%)           0 (0%)
+Events:              <none>
+
+
+Name:               gke-kubernetes-default-pool-d260bc63-j8lz
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=custom-1-1024
+                    beta.kubernetes.io/os=linux
+                    cloud.google.com/gke-boot-disk=pd-balanced
+                    cloud.google.com/gke-container-runtime=containerd
+                    cloud.google.com/gke-cpu-scaling-level=1
+                    cloud.google.com/gke-logging-variant=DEFAULT
+                    cloud.google.com/gke-max-pods-per-node=110
+                    cloud.google.com/gke-nodepool=default-pool
+                    cloud.google.com/gke-os-distribution=cos
+                    cloud.google.com/gke-provisioning=standard
+                    cloud.google.com/gke-stack-type=IPV4
+                    cloud.google.com/machine-family=custom-1
+                    cloud.google.com/private-node=false
+                    failure-domain.beta.kubernetes.io/region=asia-northeast3
+                    failure-domain.beta.kubernetes.io/zone=asia-northeast3-b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=gke-kubernetes-default-pool-d260bc63-j8lz
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=custom-1-1024
+                    topology.gke.io/zone=asia-northeast3-b
+                    topology.kubernetes.io/region=asia-northeast3
+                    topology.kubernetes.io/zone=asia-northeast3-b
+Annotations:        container.googleapis.com/instance_id: 8698527027796405267
+                    csi.volume.kubernetes.io/nodeid:
+                      {"pd.csi.storage.gke.io":"projects/cloud-418310/zones/asia-northeast3-b/instances/gke-kubernetes-default-pool-d260bc63-j8lz"}
+                    node.alpha.kubernetes.io/ttl: 0
+                    node.gke.io/last-applied-node-labels:
+                      cloud.google.com/gke-boot-disk=pd-balanced,cloud.google.com/gke-container-runtime=containerd,cloud.google.com/gke-cpu-scaling-level=1,clou...
+                    node.gke.io/last-applied-node-taints: 
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 03 Jun 2024 23:31:57 +0900
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  gke-kubernetes-default-pool-d260bc63-j8lz
+  AcquireTime:     <unset>
+  RenewTime:       Tue, 04 Jun 2024 12:45:41 +0900
+Conditions:
+  Type                          Status  LastHeartbeatTime                 LastTransitionTime                Reason                          Message
+  ----                          ------  -----------------                 ------------------                ------                          -------
+  CorruptDockerOverlay2         False   Tue, 04 Jun 2024 12:42:51 +0900   Mon, 03 Jun 2024 23:32:00 +0900   NoCorruptDockerOverlay2         docker overlay2 is functioning properly
+  SysctlChanged                 True    Tue, 04 Jun 2024 12:42:51 +0900   Tue, 04 Jun 2024 05:32:01 +0900   NodeSysctlChange                {"unmanaged": {"net.netfilter.nf_conntrack_buckets": "32768"}}
+  KernelDeadlock                False   Tue, 04 Jun 2024 12:42:51 +0900   Mon, 03 Jun 2024 23:32:01 +0900   KernelHasNoDeadlock             kernel has no deadlock
+  ReadonlyFilesystem            False   Tue, 04 Jun 2024 12:42:51 +0900   Mon, 03 Jun 2024 23:32:01 +0900   FilesystemIsNotReadOnly         Filesystem is not read-only
+  FrequentUnregisterNetDevice   False   Tue, 04 Jun 2024 12:42:51 +0900   Mon, 03 Jun 2024 23:32:00 +0900   NoFrequentUnregisterNetDevice   node is functioning properly
+  FrequentKubeletRestart        False   Tue, 04 Jun 2024 12:42:51 +0900   Mon, 03 Jun 2024 23:32:00 +0900   NoFrequentKubeletRestart        kubelet is functioning properly
+  FrequentDockerRestart         False   Tue, 04 Jun 2024 12:42:51 +0900   Mon, 03 Jun 2024 23:32:00 +0900   NoFrequentDockerRestart         docker is functioning properly
+  FrequentContainerdRestart     False   Tue, 04 Jun 2024 12:42:51 +0900   Mon, 03 Jun 2024 23:32:00 +0900   NoFrequentContainerdRestart     containerd is functioning properly
+  NetworkUnavailable            False   Mon, 03 Jun 2024 23:32:00 +0900   Mon, 03 Jun 2024 23:31:59 +0900   RouteCreated                    NodeController create implicit route
+  MemoryPressure                False   Tue, 04 Jun 2024 12:44:00 +0900   Mon, 03 Jun 2024 23:31:33 +0900   KubeletHasSufficientMemory      kubelet has sufficient memory available
+  DiskPressure                  False   Tue, 04 Jun 2024 12:44:00 +0900   Mon, 03 Jun 2024 23:31:33 +0900   KubeletHasNoDiskPressure        kubelet has no disk pressure
+  PIDPressure                   False   Tue, 04 Jun 2024 12:44:00 +0900   Mon, 03 Jun 2024 23:31:33 +0900   KubeletHasSufficientPID         kubelet has sufficient PID available
+  Ready                         True    Tue, 04 Jun 2024 12:44:00 +0900   Mon, 03 Jun 2024 23:32:18 +0900   KubeletReady                    kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  10.178.0.40
+  ExternalIP:  34.47.85.75
+  Hostname:    gke-kubernetes-default-pool-d260bc63-j8lz
+Capacity:
+  cpu:                1
+  ephemeral-storage:  5952044Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             993764Ki
+  pods:               110
+Allocatable:
+  cpu:                940m
+  ephemeral-storage:  116694622
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             629220Ki
+  pods:               110
+System Info:
+  Machine ID:                 f5165043017aea63c65d0f090e5c95e7
+  System UUID:                f5165043-017a-ea63-c65d-0f090e5c95e7
+  Boot ID:                    f1f5f140-3091-4bef-9f67-338f7e81ec03
+  Kernel Version:             6.1.75+
+  OS Image:                   Container-Optimized OS from Google
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.13
+  Kubelet Version:            v1.28.9-gke.1000000
+  Kube-Proxy Version:         v1.28.9-gke.1000000
+PodCIDR:                      10.20.2.0/24
+PodCIDRs:                     10.20.2.0/24
+ProviderID:                   gce://cloud-418310/asia-northeast3-b/gke-kubernetes-default-pool-d260bc63-j8lz
+Non-terminated Pods:          (10 in total)
+  Namespace                   Name                                                    CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                    ------------  ----------  ---------------  -------------  ---
+  default                     map-ms-deploy-575b4bc7d5-6z5k5                          0 (0%)        0 (0%)      0 (0%)           0 (0%)         109m
+  kube-system                 fluentbit-gke-fjlsj                                     100m (10%)    0 (0%)      200Mi (32%)      500Mi (81%)    13h
+  kube-system                 gke-metrics-agent-ld2xg                                 14m (1%)      0 (0%)      160Mi (26%)      160Mi (26%)    13h
+  kube-system                 konnectivity-agent-6fd68b978f-v4vtg                     15m (1%)      0 (0%)      60Mi (9%)        155Mi (25%)    13h
+  kube-system                 konnectivity-agent-autoscaler-7bd979c9d-8g2zk           10m (1%)      0 (0%)      10M (1%)         0 (0%)         13h
+  kube-system                 kube-dns-6f955b858b-987jw                               260m (27%)    0 (0%)      110Mi (17%)      210Mi (34%)    13h
+  kube-system                 kube-dns-autoscaler-755c7dfdf5-8b2jj                    20m (2%)      0 (0%)      10Mi (1%)        0 (0%)         13h
+  kube-system                 kube-proxy-gke-kubernetes-default-pool-d260bc63-j8lz    100m (10%)    0 (0%)      0 (0%)           0 (0%)         13h
+  kube-system                 l7-default-backend-788f46cdbc-24khw                     10m (1%)      0 (0%)      20Mi (3%)        0 (0%)         13h
+  kube-system                 pdcsi-node-g6zh7                                        10m (1%)      0 (0%)      20Mi (3%)        100Mi (16%)    13h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests         Limits
+  --------           --------         ------
+  cpu                539m (57%)       0 (0%)
+  memory             618174080 (95%)  1125Mi (183%)
+  ephemeral-storage  0 (0%)           0 (0%)
+  hugepages-1Gi      0 (0%)           0 (0%)
+  hugepages-2Mi      0 (0%)           0 (0%)
+Events:              <none>
+
+
+Name:               gke-kubernetes-default-pool-d260bc63-mnng
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=custom-1-1024
+                    beta.kubernetes.io/os=linux
+                    cloud.google.com/gke-boot-disk=pd-balanced
+                    cloud.google.com/gke-container-runtime=containerd
+                    cloud.google.com/gke-cpu-scaling-level=1
+                    cloud.google.com/gke-logging-variant=DEFAULT
+                    cloud.google.com/gke-max-pods-per-node=110
+                    cloud.google.com/gke-nodepool=default-pool
+                    cloud.google.com/gke-os-distribution=cos
+                    cloud.google.com/gke-provisioning=standard
+                    cloud.google.com/gke-stack-type=IPV4
+                    cloud.google.com/machine-family=custom-1
+                    cloud.google.com/private-node=false
+                    failure-domain.beta.kubernetes.io/region=asia-northeast3
+                    failure-domain.beta.kubernetes.io/zone=asia-northeast3-b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=gke-kubernetes-default-pool-d260bc63-mnng
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=custom-1-1024
+                    topology.gke.io/zone=asia-northeast3-b
+                    topology.kubernetes.io/region=asia-northeast3
+                    topology.kubernetes.io/zone=asia-northeast3-b
+Annotations:        container.googleapis.com/instance_id: 3799518469044595731
+                    csi.volume.kubernetes.io/nodeid:
+                      {"pd.csi.storage.gke.io":"projects/cloud-418310/zones/asia-northeast3-b/instances/gke-kubernetes-default-pool-d260bc63-mnng"}
+                    node.alpha.kubernetes.io/ttl: 0
+                    node.gke.io/last-applied-node-labels:
+                      cloud.google.com/gke-boot-disk=pd-balanced,cloud.google.com/gke-container-runtime=containerd,cloud.google.com/gke-cpu-scaling-level=1,clou...
+                    node.gke.io/last-applied-node-taints: 
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 03 Jun 2024 23:31:58 +0900
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  gke-kubernetes-default-pool-d260bc63-mnng
+  AcquireTime:     <unset>
+  RenewTime:       Tue, 04 Jun 2024 12:45:40 +0900
+Conditions:
+  Type                          Status  LastHeartbeatTime                 LastTransitionTime                Reason                          Message
+  ----                          ------  -----------------                 ------------------                ------                          -------
+  FrequentUnregisterNetDevice   False   Tue, 04 Jun 2024 12:42:47 +0900   Mon, 03 Jun 2024 23:31:58 +0900   NoFrequentUnregisterNetDevice   node is functioning properly
+  KernelDeadlock                False   Tue, 04 Jun 2024 12:42:47 +0900   Mon, 03 Jun 2024 23:31:58 +0900   KernelHasNoDeadlock             kernel has no deadlock
+  ReadonlyFilesystem            False   Tue, 04 Jun 2024 12:42:47 +0900   Mon, 03 Jun 2024 23:31:58 +0900   FilesystemIsNotReadOnly         Filesystem is not read-only
+  FrequentKubeletRestart        False   Tue, 04 Jun 2024 12:42:47 +0900   Mon, 03 Jun 2024 23:31:58 +0900   NoFrequentKubeletRestart        kubelet is functioning properly
+  FrequentDockerRestart         False   Tue, 04 Jun 2024 12:42:47 +0900   Mon, 03 Jun 2024 23:31:58 +0900   NoFrequentDockerRestart         docker is functioning properly
+  FrequentContainerdRestart     False   Tue, 04 Jun 2024 12:42:47 +0900   Mon, 03 Jun 2024 23:31:58 +0900   NoFrequentContainerdRestart     containerd is functioning properly
+  SysctlChanged                 True    Tue, 04 Jun 2024 12:42:47 +0900   Tue, 04 Jun 2024 05:31:59 +0900   NodeSysctlChange                {"unmanaged": {"net.netfilter.nf_conntrack_buckets": "32768"}}
+  CorruptDockerOverlay2         False   Tue, 04 Jun 2024 12:42:47 +0900   Mon, 03 Jun 2024 23:31:58 +0900   NoCorruptDockerOverlay2         docker overlay2 is functioning properly
+  NetworkUnavailable            False   Mon, 03 Jun 2024 23:32:01 +0900   Mon, 03 Jun 2024 23:31:59 +0900   RouteCreated                    NodeController create implicit route
+  MemoryPressure                False   Tue, 04 Jun 2024 12:40:53 +0900   Mon, 03 Jun 2024 23:31:30 +0900   KubeletHasSufficientMemory      kubelet has sufficient memory available
+  DiskPressure                  False   Tue, 04 Jun 2024 12:40:53 +0900   Tue, 04 Jun 2024 08:24:53 +0900   KubeletHasNoDiskPressure        kubelet has no disk pressure
+  PIDPressure                   False   Tue, 04 Jun 2024 12:40:53 +0900   Mon, 03 Jun 2024 23:31:30 +0900   KubeletHasSufficientPID         kubelet has sufficient PID available
+  Ready                         True    Tue, 04 Jun 2024 12:40:53 +0900   Mon, 03 Jun 2024 23:32:19 +0900   KubeletReady                    kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  10.178.0.38
+  ExternalIP:  34.64.168.244
+  Hostname:    gke-kubernetes-default-pool-d260bc63-mnng
+Capacity:
+  cpu:                1
+  ephemeral-storage:  5952044Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             993764Ki
+  pods:               110
+Allocatable:
+  cpu:                940m
+  ephemeral-storage:  116694622
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             629220Ki
+  pods:               110
+System Info:
+  Machine ID:                 0758db5821f9364eb78f307b2f3728a7
+  System UUID:                0758db58-21f9-364e-b78f-307b2f3728a7
+  Boot ID:                    f44e1f79-40e3-4527-86f5-e836a5a5b728
+  Kernel Version:             6.1.75+
+  OS Image:                   Container-Optimized OS from Google
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.13
+  Kubelet Version:            v1.28.9-gke.1000000
+  Kube-Proxy Version:         v1.28.9-gke.1000000
+PodCIDR:                      10.20.0.0/24
+PodCIDRs:                     10.20.0.0/24
+ProviderID:                   gce://cloud-418310/asia-northeast3-b/gke-kubernetes-default-pool-d260bc63-mnng
+Non-terminated Pods:          (8 in total)
+  Namespace                   Name                                                    CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                    ------------  ----------  ---------------  -------------  ---
+  default                     auth-db-0                                               0 (0%)        0 (0%)      0 (0%)           0 (0%)         110m
+  default                     review-ms-deploy-74fddcfc9c-82xx2                       0 (0%)        0 (0%)      0 (0%)           0 (0%)         109m
+  gmp-system                  collector-h7gcs                                         5m (0%)       0 (0%)      36M (5%)         3032M (470%)   12h
+  kube-system                 fluentbit-gke-ps9zj                                     100m (10%)    0 (0%)      200Mi (32%)      500Mi (81%)    13h
+  kube-system                 gke-metrics-agent-5fmlp                                 14m (1%)      0 (0%)      160Mi (26%)      160Mi (26%)    13h
+  kube-system                 konnectivity-agent-6fd68b978f-dq4kh                     15m (1%)      0 (0%)      60Mi (9%)        155Mi (25%)    13h
+  kube-system                 kube-proxy-gke-kubernetes-default-pool-d260bc63-mnng    100m (10%)    0 (0%)      0 (0%)           0 (0%)         13h
+  kube-system                 pdcsi-node-n8ml9                                        10m (1%)      0 (0%)      20Mi (3%)        100Mi (16%)    13h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests         Limits
+  --------           --------         ------
+  cpu                244m (25%)       0 (0%)
+  memory             497373440 (77%)  3991447040 (619%)
+  ephemeral-storage  0 (0%)           0 (0%)
+  hugepages-1Gi      0 (0%)           0 (0%)
+  hugepages-2Mi      0 (0%)           0 (0%)
+Events:              <none>
+
+
+Name:               gke-kubernetes-default-pool-d260bc63-n16w
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=custom-1-1024
+                    beta.kubernetes.io/os=linux
+                    cloud.google.com/gke-boot-disk=pd-balanced
+                    cloud.google.com/gke-container-runtime=containerd
+                    cloud.google.com/gke-cpu-scaling-level=1
+                    cloud.google.com/gke-logging-variant=DEFAULT
+                    cloud.google.com/gke-max-pods-per-node=110
+                    cloud.google.com/gke-nodepool=default-pool
+                    cloud.google.com/gke-os-distribution=cos
+                    cloud.google.com/gke-provisioning=standard
+                    cloud.google.com/gke-stack-type=IPV4
+                    cloud.google.com/machine-family=custom-1
+                    cloud.google.com/private-node=false
+                    failure-domain.beta.kubernetes.io/region=asia-northeast3
+                    failure-domain.beta.kubernetes.io/zone=asia-northeast3-b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=gke-kubernetes-default-pool-d260bc63-n16w
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=custom-1-1024
+                    topology.gke.io/zone=asia-northeast3-b
+                    topology.kubernetes.io/region=asia-northeast3
+                    topology.kubernetes.io/zone=asia-northeast3-b
+Annotations:        container.googleapis.com/instance_id: 1160868154984917321
+                    csi.volume.kubernetes.io/nodeid:
+                      {"pd.csi.storage.gke.io":"projects/cloud-418310/zones/asia-northeast3-b/instances/gke-kubernetes-default-pool-d260bc63-n16w"}
+                    node.alpha.kubernetes.io/ttl: 0
+                    node.gke.io/last-applied-node-labels:
+                      cloud.google.com/gke-boot-disk=pd-balanced,cloud.google.com/gke-container-runtime=containerd,cloud.google.com/gke-cpu-scaling-level=1,clou...
+                    node.gke.io/last-applied-node-taints: 
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 03 Jun 2024 23:48:48 +0900
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  gke-kubernetes-default-pool-d260bc63-n16w
+  AcquireTime:     <unset>
+  RenewTime:       Tue, 04 Jun 2024 12:45:46 +0900
+Conditions:
+  Type                          Status  LastHeartbeatTime                 LastTransitionTime                Reason                          Message
+  ----                          ------  -----------------                 ------------------                ------                          -------
+  FrequentUnregisterNetDevice   False   Tue, 04 Jun 2024 12:45:15 +0900   Mon, 03 Jun 2024 23:48:53 +0900   NoFrequentUnregisterNetDevice   node is functioning properly
+  KernelDeadlock                False   Tue, 04 Jun 2024 12:45:15 +0900   Mon, 03 Jun 2024 23:48:53 +0900   KernelHasNoDeadlock             kernel has no deadlock
+  ReadonlyFilesystem            False   Tue, 04 Jun 2024 12:45:15 +0900   Mon, 03 Jun 2024 23:48:53 +0900   FilesystemIsNotReadOnly         Filesystem is not read-only
+  CorruptDockerOverlay2         False   Tue, 04 Jun 2024 12:45:15 +0900   Mon, 03 Jun 2024 23:48:53 +0900   NoCorruptDockerOverlay2         docker overlay2 is functioning properly
+  SysctlChanged                 True    Tue, 04 Jun 2024 12:45:15 +0900   Mon, 03 Jun 2024 23:48:54 +0900   NodeSysctlChange                {"unmanaged": {"net.netfilter.nf_conntrack_buckets": "32768"}}
+  FrequentKubeletRestart        False   Tue, 04 Jun 2024 12:45:15 +0900   Mon, 03 Jun 2024 23:48:53 +0900   NoFrequentKubeletRestart        kubelet is functioning properly
+  FrequentDockerRestart         False   Tue, 04 Jun 2024 12:45:15 +0900   Mon, 03 Jun 2024 23:48:53 +0900   NoFrequentDockerRestart         docker is functioning properly
+  FrequentContainerdRestart     False   Tue, 04 Jun 2024 12:45:15 +0900   Mon, 03 Jun 2024 23:48:53 +0900   NoFrequentContainerdRestart     containerd is functioning properly
+  NetworkUnavailable            False   Mon, 03 Jun 2024 23:48:50 +0900   Mon, 03 Jun 2024 23:48:49 +0900   RouteCreated                    NodeController create implicit route
+  MemoryPressure                False   Tue, 04 Jun 2024 12:43:35 +0900   Mon, 03 Jun 2024 23:48:47 +0900   KubeletHasSufficientMemory      kubelet has sufficient memory available
+  DiskPressure                  False   Tue, 04 Jun 2024 12:43:35 +0900   Mon, 03 Jun 2024 23:48:47 +0900   KubeletHasNoDiskPressure        kubelet has no disk pressure
+  PIDPressure                   False   Tue, 04 Jun 2024 12:43:35 +0900   Mon, 03 Jun 2024 23:48:47 +0900   KubeletHasSufficientPID         kubelet has sufficient PID available
+  Ready                         True    Tue, 04 Jun 2024 12:43:35 +0900   Mon, 03 Jun 2024 23:48:50 +0900   KubeletReady                    kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  10.178.0.41
+  ExternalIP:  34.64.212.228
+  Hostname:    gke-kubernetes-default-pool-d260bc63-n16w
+Capacity:
+  cpu:                1
+  ephemeral-storage:  5952044Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             993764Ki
+  pods:               110
+Allocatable:
+  cpu:                940m
+  ephemeral-storage:  116694622
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             629220Ki
+  pods:               110
+System Info:
+  Machine ID:                 b106f1ccb2ca90ccbbddcd76f3f2514c
+  System UUID:                b106f1cc-b2ca-90cc-bbdd-cd76f3f2514c
+  Boot ID:                    90f74a56-6ff1-4c6d-bb48-4be3917cacd5
+  Kernel Version:             6.1.75+
+  OS Image:                   Container-Optimized OS from Google
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.13
+  Kubelet Version:            v1.28.9-gke.1000000
+  Kube-Proxy Version:         v1.28.9-gke.1000000
+PodCIDR:                      10.20.3.0/24
+PodCIDRs:                     10.20.3.0/24
+ProviderID:                   gce://cloud-418310/asia-northeast3-b/gke-kubernetes-default-pool-d260bc63-n16w
+Non-terminated Pods:          (9 in total)
+  Namespace                   Name                                                    CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                    ------------  ----------  ---------------  -------------  ---
+  default                     rabbitmq-0                                              0 (0%)        0 (0%)      0 (0%)           0 (0%)         48m
+  default                     sub-api-deploy-ccdd6879c-67jpq                          0 (0%)        0 (0%)      0 (0%)           0 (0%)         23m
+  gmp-system                  collector-vwtl7                                         5m (0%)       0 (0%)      36M (5%)         3032M (470%)   12h
+  gmp-system                  gmp-operator-7585668c8-b6rpn                            1m (0%)       0 (0%)      16M (2%)         2G (310%)      12h
+  kube-system                 fluentbit-gke-bb6l8                                     100m (10%)    0 (0%)      200Mi (32%)      500Mi (81%)    12h
+  kube-system                 gke-metrics-agent-zlttp                                 14m (1%)      0 (0%)      160Mi (26%)      160Mi (26%)    12h
+  kube-system                 konnectivity-agent-6fd68b978f-kwzwf                     15m (1%)      0 (0%)      60Mi (9%)        155Mi (25%)    12h
+  kube-system                 kube-proxy-gke-kubernetes-default-pool-d260bc63-n16w    100m (10%)    0 (0%)      0 (0%)           0 (0%)         12h
+  kube-system                 pdcsi-node-cscts                                        10m (1%)      0 (0%)      20Mi (3%)        100Mi (16%)    12h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests         Limits
+  --------           --------         ------
+  cpu                245m (26%)       0 (0%)
+  memory             513373440 (79%)  5991447040 (929%)
+  ephemeral-storage  0 (0%)           0 (0%)
+  hugepages-1Gi      0 (0%)           0 (0%)
+  hugepages-2Mi      0 (0%)           0 (0%)
+Events:              <none>
+
+
+Name:               gke-kubernetes-default-pool-d260bc63-s11b
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=custom-1-1024
+                    beta.kubernetes.io/os=linux
+                    cloud.google.com/gke-boot-disk=pd-balanced
+                    cloud.google.com/gke-container-runtime=containerd
+                    cloud.google.com/gke-cpu-scaling-level=1
+                    cloud.google.com/gke-logging-variant=DEFAULT
+                    cloud.google.com/gke-max-pods-per-node=110
+                    cloud.google.com/gke-nodepool=default-pool
+                    cloud.google.com/gke-os-distribution=cos
+                    cloud.google.com/gke-provisioning=standard
+                    cloud.google.com/gke-stack-type=IPV4
+                    cloud.google.com/machine-family=custom-1
+                    cloud.google.com/private-node=false
+                    failure-domain.beta.kubernetes.io/region=asia-northeast3
+                    failure-domain.beta.kubernetes.io/zone=asia-northeast3-b
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=gke-kubernetes-default-pool-d260bc63-s11b
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=custom-1-1024
+                    topology.gke.io/zone=asia-northeast3-b
+                    topology.kubernetes.io/region=asia-northeast3
+                    topology.kubernetes.io/zone=asia-northeast3-b
+Annotations:        container.googleapis.com/instance_id: 3417600502386420755
+                    csi.volume.kubernetes.io/nodeid:
+                      {"pd.csi.storage.gke.io":"projects/cloud-418310/zones/asia-northeast3-b/instances/gke-kubernetes-default-pool-d260bc63-s11b"}
+                    node.alpha.kubernetes.io/ttl: 0
+                    node.gke.io/last-applied-node-labels:
+                      cloud.google.com/gke-boot-disk=pd-balanced,cloud.google.com/gke-container-runtime=containerd,cloud.google.com/gke-cpu-scaling-level=1,clou...
+                    node.gke.io/last-applied-node-taints: 
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Mon, 03 Jun 2024 23:31:59 +0900
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  gke-kubernetes-default-pool-d260bc63-s11b
+  AcquireTime:     <unset>
+  RenewTime:       Tue, 04 Jun 2024 12:45:45 +0900
+Conditions:
+  Type                          Status  LastHeartbeatTime                 LastTransitionTime                Reason                          Message
+  ----                          ------  -----------------                 ------------------                ------                          -------
+  FrequentDockerRestart         False   Tue, 04 Jun 2024 12:42:48 +0900   Mon, 03 Jun 2024 23:31:59 +0900   NoFrequentDockerRestart         docker is functioning properly
+  FrequentContainerdRestart     False   Tue, 04 Jun 2024 12:42:48 +0900   Mon, 03 Jun 2024 23:31:59 +0900   NoFrequentContainerdRestart     containerd is functioning properly
+  SysctlChanged                 True    Tue, 04 Jun 2024 12:42:48 +0900   Tue, 04 Jun 2024 05:32:00 +0900   NodeSysctlChange                {"unmanaged": {"net.netfilter.nf_conntrack_buckets": "32768"}}
+  FrequentUnregisterNetDevice   False   Tue, 04 Jun 2024 12:42:48 +0900   Mon, 03 Jun 2024 23:31:59 +0900   NoFrequentUnregisterNetDevice   node is functioning properly
+  KernelDeadlock                False   Tue, 04 Jun 2024 12:42:48 +0900   Mon, 03 Jun 2024 23:31:59 +0900   KernelHasNoDeadlock             kernel has no deadlock
+  ReadonlyFilesystem            False   Tue, 04 Jun 2024 12:42:48 +0900   Mon, 03 Jun 2024 23:31:59 +0900   FilesystemIsNotReadOnly         Filesystem is not read-only
+  CorruptDockerOverlay2         False   Tue, 04 Jun 2024 12:42:48 +0900   Mon, 03 Jun 2024 23:31:59 +0900   NoCorruptDockerOverlay2         docker overlay2 is functioning properly
+  FrequentKubeletRestart        False   Tue, 04 Jun 2024 12:42:48 +0900   Mon, 03 Jun 2024 23:31:59 +0900   NoFrequentKubeletRestart        kubelet is functioning properly
+  NetworkUnavailable            False   Mon, 03 Jun 2024 23:32:02 +0900   Mon, 03 Jun 2024 23:32:01 +0900   RouteCreated                    NodeController create implicit route
+  MemoryPressure                False   Tue, 04 Jun 2024 12:42:22 +0900   Mon, 03 Jun 2024 23:31:33 +0900   KubeletHasSufficientMemory      kubelet has sufficient memory available
+  DiskPressure                  False   Tue, 04 Jun 2024 12:42:22 +0900   Tue, 04 Jun 2024 08:25:07 +0900   KubeletHasNoDiskPressure        kubelet has no disk pressure
+  PIDPressure                   False   Tue, 04 Jun 2024 12:42:22 +0900   Mon, 03 Jun 2024 23:31:33 +0900   KubeletHasSufficientPID         kubelet has sufficient PID available
+  Ready                         True    Tue, 04 Jun 2024 12:42:22 +0900   Mon, 03 Jun 2024 23:32:20 +0900   KubeletReady                    kubelet is posting ready status. AppArmor enabled
+Addresses:
+  InternalIP:  10.178.0.39
+  ExternalIP:  34.64.147.239
+  Hostname:    gke-kubernetes-default-pool-d260bc63-s11b
+Capacity:
+  cpu:                1
+  ephemeral-storage:  5952044Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             993764Ki
+  pods:               110
+Allocatable:
+  cpu:                940m
+  ephemeral-storage:  116694622
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             629220Ki
+  pods:               110
+System Info:
+  Machine ID:                 4cd22adbe46bd04067ad50b5514abb1a
+  System UUID:                4cd22adb-e46b-d040-67ad-50b5514abb1a
+  Boot ID:                    8258291a-6752-49cf-87c1-28cda56eca3e
+  Kernel Version:             6.1.75+
+  OS Image:                   Container-Optimized OS from Google
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.7.13
+  Kubelet Version:            v1.28.9-gke.1000000
+  Kube-Proxy Version:         v1.28.9-gke.1000000
+PodCIDR:                      10.20.1.0/24
+PodCIDRs:                     10.20.1.0/24
+ProviderID:                   gce://cloud-418310/asia-northeast3-b/gke-kubernetes-default-pool-d260bc63-s11b
+Non-terminated Pods:          (8 in total)
+  Namespace                   Name                                                    CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                                    ------------  ----------  ---------------  -------------  ---
+  default                     sub-db-0                                                0 (0%)        0 (0%)      0 (0%)           0 (0%)         110m
+  kube-system                 fluentbit-gke-fhql7                                     100m (10%)    0 (0%)      200Mi (32%)      500Mi (81%)    13h
+  kube-system                 gke-metrics-agent-zkznl                                 14m (1%)      0 (0%)      160Mi (26%)      160Mi (26%)    13h
+  kube-system                 konnectivity-agent-6fd68b978f-nzctr                     15m (1%)      0 (0%)      60Mi (9%)        155Mi (25%)    13h
+  kube-system                 konnectivity-agent-6fd68b978f-qtrq7                     15m (1%)      0 (0%)      60Mi (9%)        155Mi (25%)    12h
+  kube-system                 kube-dns-6f955b858b-wwqfn                               260m (27%)    0 (0%)      110Mi (17%)      210Mi (34%)    13h
+  kube-system                 kube-proxy-gke-kubernetes-default-pool-d260bc63-s11b    100m (10%)    0 (0%)      0 (0%)           0 (0%)         13h
+  kube-system                 pdcsi-node-nnqqn                                        10m (1%)      0 (0%)      20Mi (3%)        100Mi (16%)    13h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                514m (54%)   0 (0%)
+  memory             610Mi (99%)  1280Mi (208%)
+  ephemeral-storage  0 (0%)       0 (0%)
+  hugepages-1Gi      0 (0%)       0 (0%)
+  hugepages-2Mi      0 (0%)       0 (0%)
+Events:              <none>
