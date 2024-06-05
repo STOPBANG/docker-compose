@@ -12,10 +12,6 @@ spec:
       labels:
         app: review-api
     spec:
-    initContainers:
-      - name: wait-for-auth-db
-        image: busybox
-        command: ['sh', '-c', 'until nc -z review-db 3306; do echo waiting for review-db; sleep 2; done;']
       containers:
       - name: review-api
         image: ywonchae1/stopbang-review-api
