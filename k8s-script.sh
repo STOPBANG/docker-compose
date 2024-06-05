@@ -6,7 +6,7 @@ settings=("auth" "sub" "review")
 
 for setname in ${settings[@]}
 do
-	kubectl delete -f "${msname}-api-env.yml"
+	kubectl delete -f "${setname}-api-env.yml"
 	kubectl apply -f "${setname}-api-env.yml"
 	kubectl delete -f "${setname}-api-credentials.yml"
 	kubectl apply -f "${setname}-api-credentials.yml"
