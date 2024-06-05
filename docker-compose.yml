@@ -125,8 +125,6 @@ services:
     image: mysql
     container_name: sub-db
     env_file: ./.env_auth_db
-    # volumes:
-    #   - ./sub_db_init:/docker-entrypoint-initdb.d
     restart: 'always'
 
   review_db:
