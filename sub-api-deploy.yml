@@ -12,7 +12,7 @@ spec:
       labels:
         app: sub-api
     spec:
-    initContainers:
+      initContainers:
       - name: wait-for-auth-db
         image: busybox
         command: ['sh', '-c', 'until nc -z sub-db 3306; do echo waiting for sub-db; sleep 2; done;']
