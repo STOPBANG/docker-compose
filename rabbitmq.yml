@@ -22,6 +22,11 @@ spec:
         volumeMounts:
         - name: rabbitmq-data
           mountPath: /var/lib/rabbitmq
+        resources:
+          requests:
+            cpu: 1m
+          limits:
+            cpu: 15m
   volumeClaimTemplates:
   - metadata:
       name: rabbitmq-data

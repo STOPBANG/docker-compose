@@ -25,6 +25,11 @@ spec:
         env:
         - name: MS_PORT
           value: "3000"
+        resources:
+          requests:
+            cpu: 1m
+          limits:
+            cpu: 15m
 
 ---
 apiVersion: v1
