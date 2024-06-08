@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: login-logout-ms
-        image: ywonchae1/stopbang-login-logout-ms
+        image: ywonchae1/stopbang-login-logout-api
         ports:
         - containerPort: 3000
         envFrom:
