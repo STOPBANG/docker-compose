@@ -19,7 +19,7 @@ do
 		elif [ $PICK = "sub_DB" ]; then
 			IMAGENAME="ywonchae1/stopbang-sub-api"
 		elif [ $PICK = "login_logout" ]; then
-			IMAGENAME="ywonchae1/stopbang-login-logout-api"
+			IMAGENAME="ywonchae1/stopbang-login-logout-ms"
 		else
 			IMAGENAME="ywonchae1/stopbang-${PICK}-ms"
 		fi
