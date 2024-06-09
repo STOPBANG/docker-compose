@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: login-logout-ms
-        image: ywonchae1/stopbang-login-logout-ms
+        image: ywonchae1/stopbang-login-logout-api
         ports:
         - containerPort: 3000
         envFrom:
@@ -25,8 +25,10 @@ spec:
         resources:
           requests:
             cpu: 1m
+            memory: 15Mi
           limits:
-            cpu: 5m
+            cpu: 15m
+            memory: 30Mi
 
 ---
 apiVersion: v1
