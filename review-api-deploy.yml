@@ -26,6 +26,13 @@ spec:
             name: review-api-env
         - secretRef:
             name: review-api-credentials
+        resources:
+          requests:
+            cpu: 1m
+            memory: 60Mi
+          limits:
+            cpu: 10m
+            memory: 120Mi
 ---
 apiVersion: v1
 kind: Service

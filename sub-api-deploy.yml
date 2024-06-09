@@ -26,6 +26,13 @@ spec:
             name: sub-api-env
         - secretRef:
             name: sub-api-credentials
+        resources:
+          requests:
+            cpu: 1m
+            memory: 55Mi
+          limits:
+            cpu: 20m
+            memory: 100Mi
 
 ---
 apiVersion: v1

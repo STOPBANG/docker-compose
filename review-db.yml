@@ -41,6 +41,13 @@ spec:
             name: db-env
         - secretRef:
             name: db-credentials
+        resources:
+          requests:
+            cpu: 1m
+            memory: 195Mi
+          limits:
+            cpu: 20m
+            memory: 300Mi
       volumes:
       - name: mysql-review-vol
         persistentVolumeClaim:
