@@ -26,6 +26,13 @@ spec:
             name: auth-api-env
         - secretRef:
             name: auth-api-credentials
+        resources:
+          requests:
+            cpu: 1m
+            memory: 55Mi
+          limits:
+            cpu: 20m
+            memory: 100Mi
 
 ---
 apiVersion: v1

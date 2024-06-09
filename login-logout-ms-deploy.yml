@@ -22,6 +22,13 @@ spec:
             name: ms-env
         - secretRef:
             name: ms-credentials
+        resources:
+          requests:
+            cpu: 1m
+            memory: 15Mi
+          limits:
+            cpu: 15m
+            memory: 30Mi
 
 ---
 apiVersion: v1
