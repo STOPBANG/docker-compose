@@ -28,11 +28,11 @@ spec:
             name: review-api-credentials
         resources:
           requests:
-            cpu: 1m
-            memory: 60Mi
+            cpu: 50m
+            memory: 50Mi
           limits:
-            cpu: 10m
-            memory: 120Mi
+            cpu: 100m
+            memory: 100Mi
 ---
 apiVersion: v1
 kind: Service

@@ -24,11 +24,11 @@ spec:
             name: ms-credentials
         resources:
           requests:
-            cpu: 1m
-            memory: 15Mi
+            cpu: 100m
+            memory: 100Mi
           limits:
-            cpu: 10m
-            memory: 30Mi
+            cpu: 200m
+            memory: 200Mi
 
 ---
 apiVersion: v1
