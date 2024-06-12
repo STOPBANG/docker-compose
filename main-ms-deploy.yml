@@ -39,7 +39,7 @@ metadata:
   name: main-ms
 spec:
   type: LoadBalancer
-  loadBalancerIP: 34.22.77.76
+  loadBalancerIP: 34.47.85.243
   ports:
   - port: 3000
     # targetPort: 3000
