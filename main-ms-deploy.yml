@@ -28,11 +28,10 @@ spec:
         resources:
           requests:
             cpu: 100m
-            memory: 100Mi
+            memory: 128Mi
           limits:
             cpu: 200m
-            memory: 200Mi
-
+            memory: 256Mi
 ---
 apiVersion: v1
 kind: Service
@@ -40,7 +39,7 @@ metadata:
   name: main-ms
 spec:
   type: LoadBalancer
-  # loadBalancerIP: 34.22.77.76
+  loadBalancerIP: 34.22.77.76
   ports:
   - port: 3000
     # targetPort: 3000
