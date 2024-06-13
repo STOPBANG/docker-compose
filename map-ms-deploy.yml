@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: map-ms
-        image: ywonchae1/stopbang-map-ms
+        image: bibicsh22/stopbang-map-ms
         ports:
         - containerPort: 3000
         envFrom:
