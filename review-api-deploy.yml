@@ -18,7 +18,7 @@ spec:
         command: ['sh', '-c', 'until nc -z review-db 3306; do echo waiting for review-db; sleep 2; done;']
       containers:
       - name: review-api
-        image: ywonchae1/stopbang-review-api
+        image: bibicsh22/stopbang-review-api
         ports:
         - containerPort: 3000
         envFrom:
@@ -26,13 +26,6 @@ spec:
             name: review-api-env
         - secretRef:
             name: review-api-credentials
-        resources:
-          requests:
-            cpu: 100m
-            memory: 256Mi
-          limits:
-            cpu: 200m
-            memory: 256Mi
 ---
 apiVersion: v1
 kind: Service
