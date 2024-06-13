@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: main-ms
-        image: ywonchae1/stopbang-main-ms
+        image: minju0907/stopbang-main-ms
         ports:
         - containerPort: 3000
         envFrom:
